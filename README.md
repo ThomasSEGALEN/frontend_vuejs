@@ -2,8 +2,8 @@
   
 ## Table des matières :  
   
-1. [Ressources](README.md#1-vues-)  
-2. [Projet](README.md#2-composants-)  
+1. [Vues](README.md#1-vues-)  
+2. [Composants](README.md#2-composants-)  
 3. [Environnement](README.md#3-environnement-)  
   
   
