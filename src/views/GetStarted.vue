@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <div class="getstarted-container">
         <svg
-            class="spotify"
+            class="getstarted-spotify"
             width="196"
             height="59"
             viewBox="0 0 196 59"
@@ -13,12 +13,12 @@
                 fill="#62CD5D"
             />
         </svg>
-        <h1 class="title">Enjoy Listening To Music</h1>
-        <p class="text">
+        <h1 class="getstarted-title">Enjoy Listening To Music</h1>
+        <p class="getstarted-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
             enim purus sed phasellus. Cursus ornare id scelerisque aliquam.
         </p>
-        <Button class="button">Get Started</Button>
+        <Button class="getstarted-button">Get Started</Button>
     </div>
 </template>
 
@@ -28,15 +28,15 @@ import Button from '@/components/Button.vue';
 export default Button;
 </script>
 
-<style scoped>
-.container {
+<style>
+.getstarted-container {
     position: relative;
     width: 390px;
     height: 844px;
     background-image: url('../assets/get_started_background.png');
 }
 
-.spotify {
+.getstarted-spotify {
     position: absolute;
     left: 24.87%;
     right: 24.87%;
@@ -44,7 +44,7 @@ export default Button;
     bottom: 88.63%;
 }
 
-.title {
+.getstarted-title {
     position: absolute;
     width: 284px;
     height: 34px;
@@ -60,7 +60,7 @@ export default Button;
     color: #dadada;
 }
 
-.text {
+.getstarted-text {
     position: absolute;
     width: 297px;
     height: 92px;
@@ -75,7 +75,7 @@ export default Button;
     color: #797979;
 }
 
-.button {
+.getstarted-button {
     position: absolute;
     width: 329px;
     height: 92px;

@@ -1,9 +1,7 @@
-<script setup></script>
-
 <template>
-    <div class="loading-container">
+    <div class="choosemode-container">
         <svg
-            class="loading-spotify"
+            class="choosemode-spotify"
             width="196"
             height="59"
             viewBox="0 0 196 59"
@@ -15,22 +13,137 @@
                 fill="#62CD5D"
             />
         </svg>
+        <div class="choosemode-active"></div>
+        <div class="choosemode-dark-mode">
+            <svg
+                class="choosemode-dark-mode-icon"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M18.4044 18.5833C24.4044 28.9756 35.6769 25.9315 28.5025 30.0736C21.3281 34.2158 12.1543 31.7576 8.01212 24.5833C3.86999 17.4089 6.32812 8.23501 13.5025 4.09287C20.6769 -0.0492657 12.4044 8.19095 18.4044 18.5833Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                />
+            </svg>
+        </div>
+        <div class="choosemode-light-mode">
+            <svg
+                class="choosemode-light-mode-icon"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <g clip-path="url(#clip0_1_358)">
+                    <path
+                        d="M16 1.33331V3.99998M16 28V30.6666M30.6667 16H28M4 16H1.33333M26.3709 5.62908L24.4853 7.5147M7.51472 24.4853L5.6291 26.3709M26.3709 26.3709L24.4853 24.4853M7.51472 7.5147L5.6291 5.62908M24 16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16C8 11.5817 11.5817 7.99998 16 7.99998C20.4183 7.99998 24 11.5817 24 16Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                    />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1_358">
+                        <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <Button class="choosemode-button">Continue</Button>
     </div>
 </template>
 
+<script>
+import Button from '@/components/Button.vue';
+
+export default Button;
+</script>
+
 <style>
-.loading-container {
+.choosemode-container {
     position: relative;
     width: 390px;
     height: 844px;
-    background: #0d0c0c;
+    background-image: url('../assets/choose_mode_background.png');
 }
 
-.loading-spotify {
+.choosemode-spotify {
     position: absolute;
     left: 24.87%;
     right: 24.87%;
-    top: 46.56%;
-    bottom: 46.45%;
+    top: 4.38%;
+    bottom: 88.63%;
+}
+
+.choosemode-dark-mode {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    left: 84px;
+    top: 500px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(43.5px);
+}
+
+.choosemode-dark-mode-icon {
+    position: absolute;
+    width: 24.81px;
+    height: 29.09px;
+    left: 6px;
+    top: 3px;
+}
+
+.choosemode-active {
+    position: absolute;
+    width: 36px;
+    height: 16.5px;
+    left: 102px;
+    top: 562px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: #62cd5d;
+}
+
+.choosemode-light-mode {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    left: 228px;
+    top: 499px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(43.5px);
+}
+
+.choosemode-light-mode-icon {
+    position: absolute;
+    width: 29.33px;
+    height: 29.33px;
+    left: 1.33px;
+    top: 1.33px;
+}
+
+.choosemode-button {
+    position: absolute;
+    width: 329px;
+    height: 92px;
+    left: 33px;
+    top: 683px;
+    background: #42c83c;
+    border-radius: 30px;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #f6f6f6;
 }
 </style>
