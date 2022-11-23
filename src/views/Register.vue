@@ -185,6 +185,11 @@ import ButtonComponent from '../components/ButtonComponent.vue';
     background: #1c1b1b;
 }
 
+.register-fullname-input:focus {
+    color: #d7d7d7;
+    opacity: 1;
+}
+
 .register-email-input {
     box-sizing: border-box;
     position: absolute;
