@@ -4,10 +4,10 @@ import Button from '@/components/Button.vue';
 </script>
 
 <template>
-    <div class="register-container">
-        <Button class="register-back-button" route="/authentification">
+    <div class="signup-container">
+        <Button class="signup-back-button" route="/authentification">
             <svg
-                class="register-back-icon"
+                class="signup-back-icon"
                 width="6"
                 height="12"
                 viewBox="0 0 6 12"
@@ -21,7 +21,7 @@ import Button from '@/components/Button.vue';
             </svg>
         </Button>
         <svg
-            class="register-spotify"
+            class="signup-spotify"
             width="108"
             height="33"
             viewBox="0 0 108 33"
@@ -33,16 +33,18 @@ import Button from '@/components/Button.vue';
                 fill="#62CD5D"
             />
         </svg>
-        <h1 class="register-title">Register</h1>
-        <p class="register-paragraph">
+        <h1 class="signup-title">Sign In</h1>
+        <p class="signup-paragraph">
             If you need any support
-            <a href="/support" class="register-paragraph-active">click here</a>
+            <a href="/support" class="signup-paragraph-active">click here</a>
         </p>
-        <Input class="register-fullname-input" placeholder="Full Name"></Input>
-        <Input class="register-email-input" placeholder="Enter Email"></Input>
-        <Input class="register-password-input" placeholder="Password"></Input>
+        <Input
+            class="signup-email-input"
+            placeholder="Enter Email Or Username"
+        ></Input>
+        <Input class="signup-password-input" placeholder="Password"></Input>
         <svg
-            class="register-password-show"
+            class="signup-password-show"
             width="24"
             height="20"
             viewBox="0 0 24 20"
@@ -64,14 +66,17 @@ import Button from '@/components/Button.vue';
                 fill="#5B5B5B"
             />
         </svg>
-        <Button class="register-register-button" to="/authentification"
-            >Register</Button
+        <a href="/reset-password" class="signup-password-recovery">
+            Recovery Password
+        </a>
+        <Button class="signup-signin-button" to="/authentification"
+            >Sign In</Button
         >
-        <div class="register-left-line"></div>
-        <span class="register-line-text">Or</span>
-        <div class="register-right-line"></div>
+        <div class="signup-left-line"></div>
+        <span class="signup-line-text">Or</span>
+        <div class="signup-right-line"></div>
         <svg
-            class="register-google-icon"
+            class="signup-google-icon"
             width="29"
             height="30"
             viewBox="0 0 29 30"
@@ -96,7 +101,7 @@ import Button from '@/components/Button.vue';
             />
         </svg>
         <svg
-            class="register-apple-icon"
+            class="signup-apple-icon"
             width="29"
             height="36"
             viewBox="0 0 29 36"
@@ -108,24 +113,24 @@ import Button from '@/components/Button.vue';
                 fill="#D3D3D3"
             />
         </svg>
-        <p class="register-register-paragraph">
-            Do you have an account?
-            <a href="/sign-up" class="register-register-paragraph-active"
-                >Sign In</a
+        <p class="signup-register-paragraph">
+            Not a member ?
+            <a href="/register" class="signup-register-paragraph-active"
+                >Register now</a
             >
         </p>
     </div>
 </template>
 
 <style>
-.register-container {
+.signup-container {
     position: relative;
     width: 390px;
     height: 844px;
     background: #1c1b1b;
 }
 
-.register-back-button {
+.signup-back-button {
     border: none;
     position: absolute;
     width: 24px;
@@ -136,7 +141,7 @@ import Button from '@/components/Button.vue';
     background-color: #252525;
 }
 
-.register-back-icon {
+.signup-back-icon {
     position: absolute;
     width: 5.5px;
     height: 11.5px;
@@ -144,7 +149,7 @@ import Button from '@/components/Button.vue';
     top: 6.25px;
 }
 
-.register-spotify {
+.signup-spotify {
     position: absolute;
     left: 36.15%;
     right: 36.15%;
@@ -152,12 +157,12 @@ import Button from '@/components/Button.vue';
     bottom: 91.82%;
 }
 
-.register-title {
+.signup-title {
     position: absolute;
-    width: 115px;
+    width: 96px;
     height: 41px;
-    left: 137px;
-    top: 116px;
+    left: 147px;
+    top: 149px;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
@@ -167,12 +172,12 @@ import Button from '@/components/Button.vue';
     color: #f2f2f2;
 }
 
-.register-paragraph {
+.signup-paragraph {
     position: absolute;
     width: 187px;
     height: 16px;
-    left: 101px;
-    top: 172px;
+    left: 102px;
+    top: 212px;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 400;
@@ -182,71 +187,76 @@ import Button from '@/components/Button.vue';
     color: #e1e1e1;
 }
 
-.register-paragraph-active {
+.signup-paragraph-active {
     color: #38b432;
 }
 
-.register-fullname-input {
+.signup-email-input {
     box-sizing: border-box;
     position: absolute;
     width: 334px;
     height: 80px;
     left: 28px;
-    top: 214px;
+    top: 266px;
     opacity: 0.14;
     border: 1px solid #ffffff;
     border-radius: 30px;
+    background: #1c1b1b;
 }
 
-.register-email-input {
-    box-sizing: border-box;
-    position: absolute;
-    width: 334px;
-    height: 80px;
-    left: 28px;
-    top: 310px;
-    opacity: 0.14;
-    border: 1px solid #ffffff;
-    border-radius: 30px;
-}
-
-.register-email-input:focus {
+.signup-email-input:focus {
     color: #d7d7d7;
     opacity: 1;
 }
 
-.register-password-show {
+.signup-password-show {
     position: absolute;
     width: 25.5px;
     height: 25.13px;
     left: 307px;
-    top: 434px;
+    top: 390px;
 }
 
-.register-password-input {
+.signup-password-input {
     box-sizing: border-box;
     position: absolute;
     width: 334px;
     height: 80px;
     left: 28px;
-    top: 406px;
+    top: 362px;
     opacity: 0.14;
     border: 1px solid #ffffff;
     border-radius: 30px;
+    background: #1c1b1b;
 }
 
-.register-password-input:focus {
+.signup-password-input:focus {
     color: #d7d7d7;
     opacity: 1;
 }
 
-.register-register-button {
+.signup-password-recovery {
+    position: absolute;
+    width: 127px;
+    height: 19px;
+    left: 45px;
+    top: 462px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #aeaeae;
+}
+
+.signup-signin-button {
     border: none;
     position: absolute;
-    width: 332px;
+    width: 325px;
     height: 80px;
-    left: 29px;
-    top: 519px;
+    left: 33px;
+    top: 503px;
     background: #42c83c;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
     border-radius: 30px;
@@ -259,21 +269,21 @@ import Button from '@/components/Button.vue';
     color: #d7d7d7;
 }
 
-.register-left-line {
+.signup-left-line {
     position: absolute;
     width: 146px;
     height: 1px;
-    left: 32px;
-    top: 638px;
+    left: 33px;
+    top: 614px;
     background: linear-gradient(0.25turn, #aeaeae, #1c1b1b);
 }
 
-.register-line-text {
+.signup-line-text {
     position: absolute;
     width: 14px;
     height: 16px;
-    left: 189px;
-    top: 628px;
+    left: 190px;
+    top: 604px;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 400;
@@ -283,37 +293,37 @@ import Button from '@/components/Button.vue';
     color: #dcdcdc;
 }
 
-.register-right-line {
+.signup-right-line {
     position: absolute;
     width: 146px;
     height: 1px;
-    left: 211px;
-    top: 638px;
+    left: 212px;
+    top: 614px;
     background: linear-gradient(0.25turn, #1c1b1b, #aeaeae);
 }
 
-.register-google-icon {
+.signup-google-icon {
     position: absolute;
     width: 27.99px;
     height: 28.64px;
-    left: 137px;
-    top: 689px;
+    left: 137.73px;
+    top: 664.88px;
 }
 
-.register-apple-icon {
+.signup-apple-icon {
     position: absolute;
     left: 57.44%;
     right: 35.13%;
-    top: 80.81%;
-    bottom: 14.93%;
+    top: 77.96%;
+    bottom: 17.77%;
 }
 
-.register-register-paragraph {
+.signup-register-paragraph {
     position: absolute;
-    width: 219px;
-    height: 38px;
-    left: 85px;
-    top: 749px;
+    width: 198px;
+    height: 19px;
+    left: 98px;
+    top: 751px;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
@@ -323,7 +333,7 @@ import Button from '@/components/Button.vue';
     color: #dbdbdb;
 }
 
-.register-register-paragraph-active {
+.signup-register-paragraph-active {
     color: #288ce9;
 }
 

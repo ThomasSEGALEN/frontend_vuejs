@@ -12,6 +12,7 @@ module.exports = {
             files: ['src/views/**/*.vue', 'src/components/**/*.vue'],
             rules: {
                 'vue/multi-word-component-names': 0,
+                'no-unused-vars': 'off',
             },
         },
     ],

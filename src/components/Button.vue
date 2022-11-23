@@ -1,5 +1,11 @@
+<script>
+export default {
+    props: ['route'],
+};
+</script>
+
 <template>
-    <button class="button">
-        <slot class="button-text"></slot>
-    </button>
+    <router-link class="button" :to="route">
+        <slot class="button-icon"></slot>
+    </router-link>
 </template>

@@ -1,3 +1,7 @@
+<script>
+import Button from '@/components/Button.vue';
+</script>
+
 <template>
     <div class="choosemode-container">
         <svg
@@ -57,12 +61,6 @@
         <Button class="choosemode-button">Continue</Button>
     </div>
 </template>
-
-<script>
-import Button from '@/components/Button.vue';
-
-export default Button;
-</script>
 
 <style>
 .choosemode-container {
@@ -131,7 +129,6 @@ export default Button;
 
 .choosemode-button {
     border: none;
-
     position: absolute;
     width: 329px;
     height: 92px;
@@ -139,7 +136,6 @@ export default Button;
     top: 683px;
     background: #42c83c;
     border-radius: 30px;
-
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
