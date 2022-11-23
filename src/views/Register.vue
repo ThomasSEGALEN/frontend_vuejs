@@ -51,7 +51,7 @@ import ButtonComponent from '../components/ButtonComponent.vue';
         </svg>
         <ButtonComponent
             class="register-register-button"
-            to="/loading"
+            to="/"
             label="Register"
         ></ButtonComponent>
         <div class="register-left-line"></div>

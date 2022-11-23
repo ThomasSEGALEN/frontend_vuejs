@@ -56,7 +56,7 @@ import ButtonComponent from '@/components/ButtonComponent.vue';
         </a>
         <ButtonComponent
             class="signup-signin-button"
-            to="/loading"
+            to="/"
             label="Sign In"
         ></ButtonComponent>
         <div class="signup-left-line"></div>
