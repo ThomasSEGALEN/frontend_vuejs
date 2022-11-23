@@ -34,6 +34,7 @@ import ButtonComponent from '@/components/ButtonComponent.vue';
                 />
             </svg>
         </div>
+        <p class="choosemode-dark-mode-text">Dark mode</p>
         <div class="choosemode-light-mode">
             <svg
                 class="choosemode-light-mode-icon"
@@ -58,6 +59,7 @@ import ButtonComponent from '@/components/ButtonComponent.vue';
                 </defs>
             </svg>
         </div>
+        <p class="choosemode-light-mode-text">Light mode</p>
         <ButtonComponent
             class="choosemode-button"
             to="/authentification"
@@ -112,6 +114,21 @@ import ButtonComponent from '@/components/ButtonComponent.vue';
     background: #62cd5d;
 }
 
+.choosemode-dark-mode-text {
+    position: absolute;
+    width: 88px;
+    height: 23px;
+    left: 78px;
+    top: 590px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #dadada;
+}
+
 .choosemode-light-mode {
     position: absolute;
     width: 73px;
@@ -129,6 +146,21 @@ import ButtonComponent from '@/components/ButtonComponent.vue';
     height: 29.33px;
     left: 23px;
     top: 21px;
+}
+
+.choosemode-light-mode-text {
+    position: absolute;
+    width: 90px;
+    height: 23px;
+    left: 221px;
+    top: 592px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #dadada;
 }
 
 .choosemode-button {

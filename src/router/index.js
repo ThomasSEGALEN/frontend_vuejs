@@ -9,7 +9,7 @@ import Register from '../views/Register.vue';
 const routes = [
     {
         name: 'Loading',
-        path: '/loading',
+        path: '/',
         component: Loading,
     },
     {

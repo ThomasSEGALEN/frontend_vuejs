@@ -17,7 +17,7 @@ import ButtonComponent from '@/components/ButtonComponent.vue';
                 fill="#62CD5D"
             />
         </svg>
-        <!-- <h1 class="getstarted-title">Enjoy Listening To Music</h1> -->
+        <h1 class="getstarted-title">Enjoy Listening To Music</h1>
         <p class="getstarted-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
             enim purus sed phasellus. Cursus ornare id scelerisque aliquam.
