@@ -1,35 +1,35 @@
-# frontend_vuejs
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+# Vote électronique  
+  
+## Table des matières :  
+  
+1. [Ressources](README.md#1-vues-)  
+2. [Projet](README.md#2-composants-)  
+3. [Environnement](README.md#3-environnement-)  
+  
+  
+## 1. Vues :  
+  
+Voici les différentes pages :  
+  
+-   Loading accessible via /loading  
+-   GetStarted accessible via /get-started  
+-   ChooseMode accessible via /choose-mode  
+-   Authentification accessible via /authentification  
+-   Register accessible via /register  
+-   SignUp accessible via /sign-up  
+    
+## 2. Composants :  
+  
+Voici les différents composants :  
+  
+-   ButtonComponent
+-   InputComponent 
+  
+## 3. Environnement :  
+  
+| _Nom_ | _Version_ |  
+| :-----: | :-------: |  
+| Vue | ^3.2.41 |  
+| Vue router | ^4.1.6 |  
+| Vite | ^3.1.8 |
+  
