@@ -1,5 +1,5 @@
 <script>
-import Button from '@/components/Button.vue';
+import ButtonComponent from '@/components/ButtonComponent.vue';
 </script>
 
 <template>
@@ -17,12 +17,16 @@ import Button from '@/components/Button.vue';
                 fill="#62CD5D"
             />
         </svg>
-        <h1 class="getstarted-title">Enjoy Listening To Music</h1>
+        <!-- <h1 class="getstarted-title">Enjoy Listening To Music</h1> -->
         <p class="getstarted-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
             enim purus sed phasellus. Cursus ornare id scelerisque aliquam.
         </p>
-        <Button class="getstarted-button">Get Started</Button>
+        <ButtonComponent
+            class="getstarted-button"
+            to="/authentification"
+            label="Get Started"
+        ></ButtonComponent>
     </div>
 </template>
 
@@ -48,7 +52,6 @@ import Button from '@/components/Button.vue';
     height: 34px;
     left: 53px;
     top: 499px;
-
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;

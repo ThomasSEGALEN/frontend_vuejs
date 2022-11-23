@@ -1,25 +1,10 @@
 <script>
-import Input from '@/components/Input.vue';
-import Button from '@/components/Button.vue';
+import InputComponent from '@/components/InputComponent.vue';
+import ButtonComponent from '@/components/ButtonComponent.vue';
 </script>
 
 <template>
     <div class="signup-container">
-        <Button class="signup-back-button" route="/authentification">
-            <svg
-                class="signup-back-icon"
-                width="6"
-                height="12"
-                viewBox="0 0 6 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M5.52796 1.53269C5.82216 1.24111 5.82427 0.766238 5.53269 0.472041C5.24111 0.177844 4.76624 0.175726 4.47204 0.467309L2.67731 2.2461C2.00134 2.91604 1.44886 3.46359 1.05706 3.95146C0.649628 4.45878 0.354695 4.97372 0.275909 5.59184C0.241364 5.86286 0.241364 6.13714 0.275909 6.40816C0.354695 7.02628 0.649628 7.54122 1.05706 8.04854C1.44886 8.53641 2.00133 9.08395 2.6773 9.75389L4.47204 11.5327C4.76624 11.8243 5.24111 11.8222 5.53269 11.528C5.82427 11.2338 5.82216 10.7589 5.52796 10.4673L3.76499 8.72C3.0495 8.01086 2.55869 7.52282 2.22659 7.10929C1.904 6.7076 1.79332 6.44958 1.76387 6.2185C1.74538 6.07341 1.74538 5.92659 1.76387 5.7815C1.79332 5.55042 1.904 5.2924 2.22659 4.89071C2.55869 4.47718 3.0495 3.98914 3.76499 3.28L5.52796 1.53269Z"
-                    fill="#DDDDDD"
-                />
-            </svg>
-        </Button>
         <svg
             class="signup-spotify"
             width="108"
@@ -69,9 +54,11 @@ import Button from '@/components/Button.vue';
         <a href="/reset-password" class="signup-password-recovery">
             Recovery Password
         </a>
-        <Button class="signup-signin-button" to="/authentification"
-            >Sign In</Button
-        >
+        <ButtonComponent
+            class="signup-signin-button"
+            to="/loading"
+            label="Sign In"
+        ></ButtonComponent>
         <div class="signup-left-line"></div>
         <span class="signup-line-text">Or</span>
         <div class="signup-right-line"></div>
@@ -128,25 +115,6 @@ import Button from '@/components/Button.vue';
     width: 390px;
     height: 844px;
     background: #1c1b1b;
-}
-
-.signup-back-button {
-    border: none;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 34px;
-    top: 40px;
-    border-radius: 50%;
-    background-color: #252525;
-}
-
-.signup-back-icon {
-    position: absolute;
-    width: 5.5px;
-    height: 11.5px;
-    left: 9.25px;
-    top: 6.25px;
 }
 
 .signup-spotify {

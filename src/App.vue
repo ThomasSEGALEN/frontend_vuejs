@@ -1,9 +1,10 @@
 <script setup></script>
 
 <template>
-    <router-view v-slot="{ Component }" id="app">
+    <router-view></router-view>
+    <!-- <router-view v-slot="{ Component }" id="app">
         <component :is="Component" />
-    </router-view>
+    </router-view> -->
 </template>
 
 <style scoped>

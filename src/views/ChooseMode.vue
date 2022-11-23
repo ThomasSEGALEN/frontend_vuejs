@@ -1,5 +1,5 @@
 <script>
-import Button from '@/components/Button.vue';
+import ButtonComponent from '@/components/ButtonComponent.vue';
 </script>
 
 <template>
@@ -58,7 +58,11 @@ import Button from '@/components/Button.vue';
                 </defs>
             </svg>
         </div>
-        <Button class="choosemode-button">Continue</Button>
+        <ButtonComponent
+            class="choosemode-button"
+            to="/authentification"
+            label="Continue"
+        ></ButtonComponent>
     </div>
 </template>
 
@@ -93,8 +97,8 @@ import Button from '@/components/Button.vue';
     position: absolute;
     width: 24.81px;
     height: 29.09px;
-    left: 6px;
-    top: 3px;
+    left: 23px;
+    top: 21px;
 }
 
 .choosemode-active {
@@ -123,8 +127,8 @@ import Button from '@/components/Button.vue';
     position: absolute;
     width: 29.33px;
     height: 29.33px;
-    left: 1.33px;
-    top: 1.33px;
+    left: 23px;
+    top: 21px;
 }
 
 .choosemode-button {
