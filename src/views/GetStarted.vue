@@ -76,6 +76,8 @@ export default Button;
 }
 
 .getstarted-button {
+    border: none;
+
     position: absolute;
     width: 329px;
     height: 92px;

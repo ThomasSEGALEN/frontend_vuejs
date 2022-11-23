@@ -130,6 +130,8 @@ export default Button;
 }
 
 .choosemode-button {
+    border: none;
+
     position: absolute;
     width: 329px;
     height: 92px;

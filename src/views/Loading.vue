@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
     <div class="loading-container">
         <svg
